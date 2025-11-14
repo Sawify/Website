@@ -1,0 +1,20 @@
+# Sawify robots.txt
+# Controls search engine crawler access
+
+User-agent: *
+Allow: /
+Disallow: /redirect.html
+Disallow: /.well-known/
+
+# Specific rules for common crawlers
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# Crawl delay (optional - in seconds)
+Crawl-delay: 1
+
+# Sitemap location (add when you create sitemap.xml)
+# Sitemap: https://sawify.co/sitemap.xml

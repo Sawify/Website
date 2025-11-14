@@ -1,0 +1,1583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sawify | Grow Smarter, Scale louder</title>
+    <link rel="icon" type="image/png" href="Sawify.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Fallback font stack in case Google Fonts CDN is unavailable */
+        @supports not (font-family: 'Poppins') {
+            * {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif !important;
+            }
+        }
+    </style>
+</head>
+<body id="top">
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-left">
+                <div class="logo">
+                    <a href="#top" class="logo-link">
+                        <img src="LogoSawify1.png" alt="Sawify Logo">
+                    </a>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#footer">Resources</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                </ul>
+            </div>
+            <div class="nav-buttons">
+                <button class="log-in-btn" data-href="https://sawify.co/auth">Log In</button>
+                <button class="get-started-btn" data-href="https://sawify.co/auth">Get Started</button>
+            </div>
+            <button class="hamburger-menu" id="hamburgerMenu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile/Tablet Dropdown Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-content">
+            <ul class="mobile-nav-links">
+                <li><a href="#products" class="mobile-nav-link">Products</a></li>
+                <li><a href="#footer" class="mobile-nav-link">Resources</a></li>
+                <li><a href="#pricing" class="mobile-nav-link">Pricing</a></li>
+            </ul>
+            <div class="mobile-nav-buttons">
+                <button class="mobile-log-in-btn" data-href="https://sawify.co/auth">Log In</button>
+                <button class="mobile-get-started-btn" data-href="https://sawify.co/auth">Get Started</button>
+            </div>
+        </div>
+    </div>
+    
+    <section class="hero">
+        <div class="ring1"></div>
+        <div class="ring2"></div>
+        <div class="ring3"></div>
+        <div class="ring4"></div>
+        <div class="ring5"></div>
+        <div class="ring6"></div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <a href="https://discord.gg/Sy54BkG8" target="_blank" rel="noopener noreferrer" class="discord-btn">
+                    Join our Discord community
+                    <div class="discord-arrow-btn">
+                        <img src="ArrowUpRight.svg" alt="Arrow" class="discord-arrow">
+                    </div>
+                </a>
+                <h1 class="hero-title">
+                    Grow smarter, scale louder<br>
+                    All in one platform
+                </h1>
+                <button class="hero-get-started-btn" data-href="https://sawify.co/auth">Get Started For FREE</button>
+                <p class="hero-subtitle">Free Forever. No Credit Card.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="herocta-section">
+        <div class="herocta-container">
+            <div class="trusted-by">
+                <p class="trusted-text">Trusted By Many</p>
+                <div class="company-logos">
+                    <div class="company-logo">
+                        <img src="HackerClass.png" alt="HackerClass" class="company-logo-img">
+                    </div>
+                    <div class="company-logo">
+                        <img src="JCurveAdvertising.png" alt="JCurve Advertising" class="company-logo-img">
+                    </div>
+                    <div class="company-logo">
+                        <img src="Autoappoint.png" alt="Autoappoint" class="company-logo-img">
+                    </div>
+                    <div class="company-logo">
+                        <img src="SDM.png" alt="SDM" class="company-logo-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="featured1" id="products">
+        <div class="featured1-container">
+            <div class="featured1-header">
+                <h2 class="featured1-title">Everything that you need<br>in one workplace</h2>
+                <p class="featured1-subtitle">More than a provider—a partner in your growth!</p>
+            </div>
+            
+            <div class="featured1-content">
+                <div class="features-list">
+                    <div class="feature-item active">
+                        <div class="feature-header">
+                            <h3>AI Writing Assistant</h3>
+                            <button class="feature-toggle">−</button>
+                        </div>
+                        <div class="feature-description">
+                            <p>Effortlessly craft tailored content optimized for engagement and built to convert.</p>
+                            <a href="https://sawify.co/auth" class="learn-more">Learn more</a>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-item">
+                        <div class="feature-header">
+                            <h3>Content Planner</h3>
+                            <button class="feature-toggle">+</button>
+                        </div>
+                        <div class="feature-description">
+                            <p>Strategically organize and schedule your content calendar with automation and collaboration tools.</p>
+                            <a href="https://sawify.co/auth" class="learn-more">Learn more</a>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-item">
+                        <div class="feature-header">
+                            <h3>Tables</h3>
+                            <button class="feature-toggle">+</button>
+                        </div>
+                        <div class="feature-description">
+                            <p>Build dynamic databases and workflows that adapt to your business needs with powerful filtering and sorting.</p>
+                            <a href="https://sawify.co/auth" class="learn-more">Learn more</a>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                <div class="feature-preview">
+                    <div class="preview-content">
+                        <img src="AIWritingAssistant.png" alt="AI Writing Assistant Preview" class="preview-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="featured2">
+        <div class="featured2-container">
+            <div class="featured2-header">
+                <h2 class="featured2-title">What make Sawify different?</h2>
+                <p class="featured2-subtitle">Running LinkedIn marketing isn't just about writing posts, it's about strategy, structure, and keeping your content pipeline consistent. The challenge? Doing it fast and organized without drowning in scattered notes, spreadsheets, or tools that don't fit.</p>
+            </div>
+            
+            <div class="featured2-grid">
+                <div class="main-content">
+                    <div class="top-row">
+                        <div class="feature-card fast-card">
+                            <div class="thunder-icon">
+                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13 2L3 14H12L11 22L21 10H12L13 2Z" stroke="currentColor" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="fast-title-container">
+                                <div class="fast-title-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M13 2L3 14H12L11 22L21 10H12L13 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                                <h3>Fast</h3>
+                            </div>
+                            <p>Less time juggling drafts, more time creating. Everything in one place with previews, calendars, and organized content.</p>
+                        </div>
+                        
+                        <div class="feature-card simplicity-card">
+                            <div class="simplicity-bg-elements">
+                                <div class="simplicity-element">
+                                    <div class="element-icon image-icon">
+                                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" stroke-width="2"/>
+                                            <circle cx="8.5" cy="8.5" r="1.5" stroke="currentColor" stroke-width="2"/>
+                                            <path d="M21 15L16 10L5 21" stroke="currentColor" stroke-width="2"/>
+                                        </svg>
+                                    </div>
+                                    <div class="element-lines">
+                                        <div class="element-line long"></div>
+                                        <div class="element-line medium"></div>
+                                        <div class="element-line short"></div>
+                                        <div class="element-line medium"></div>
+                                    </div>
+                                </div>
+                                <div class="simplicity-element">
+                                    <div class="element-icon video-icon">
+                                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="1.5" y="3" width="22" height="18" rx="2" stroke="currentColor" stroke-width="2"/>
+                                            <path d="M9.5 8L16.5 12L9.5 16V8Z" fill="currentColor"/>
+                                        </svg>
+                                    </div>
+                                    <div class="element-lines">
+                                        <div class="element-line long"></div>
+                                        <div class="element-line short"></div>
+                                        <div class="element-line medium"></div>
+                                        <div class="element-line long"></div>
+                                    </div>
+                                </div>
+                                <div class="simplicity-element">
+                                    <div class="element-icon document-icon">
+                                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M14 2H6C5.46957 2 4.96086 2.21071 4.58579 2.58579C4.21071 2.96086 4 3.46957 4 4V20C4 20.5304 4.21071 21.0391 4.58579 21.4142C4.96086 21.7893 5.46957 22 6 22H18C18.5304 22 19.0391 21.7893 19.4142 21.4142C19.7893 21.0391 20 20.5304 20 20V8L14 2Z" stroke="currentColor" stroke-width="2"/>
+                                            <path d="M14 2V8H20" stroke="currentColor" stroke-width="2"/>
+                                            <path d="M16 13H8" stroke="currentColor" stroke-width="2"/>
+                                            <path d="M16 17H8" stroke="currentColor" stroke-width="2"/>
+                                            <path d="M10 9H8" stroke="currentColor" stroke-width="2"/>
+                                        </svg>
+                                    </div>
+                                    <div class="element-lines">
+                                        <div class="element-line medium"></div>
+                                        <div class="element-line long"></div>
+                                        <div class="element-line short"></div>
+                                        <div class="element-line long"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="simplicity-title-container">
+                                <div class="simplicity-title-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="3" y="3" width="18" height="18" rx="3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <line x1="3" y1="10" x2="21" y2="10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                        <line x1="10" y1="10" x2="10" y2="21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                    </svg>
+                                </div>
+                                <h3>Simplicity</h3>
+                            </div>
+                            <p>Everything you need for LinkedIn, neatly organized, no clutter, no confusion, just a clean workflow that makes planning effortless.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="bottom-row">
+                        <div class="feature-card ai-card">
+                            <div class="post-preview">
+                                <div class="post-header">
+                                    <div class="profile-avatar"></div>
+                                    <div class="profile-info">
+                                        <div class="profile-name"></div>
+                                        <div class="profile-handle"></div>
+                                    </div>
+                                    <div class="post-menu">
+                                        <div class="menu-dot"></div>
+                                        <div class="menu-dot"></div>
+                                        <div class="menu-dot"></div>
+                                    </div>
+                                </div>
+                                <div class="post-content">
+                                    <div class="content-line long"></div>
+                                    <div class="content-line medium"></div>
+                                    <div class="content-line short"></div>
+                                    <div class="content-line medium"></div>
+                                    <div class="content-line short"></div>
+                                    <div class="content-line long"></div>
+                                    <div class="content-line medium"></div>
+                                    <div class="content-line short"></div>
+                                    <div class="content-line long"></div>
+                                </div>
+                            </div>
+                            <div class="ai-title-container">
+                                <div class="ai-title-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="5" y="5" width="14" height="14" rx="2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <rect x="9" y="9" width="6" height="6" rx="1" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <!-- Top lines -->
+                                        <line x1="9" y1="2" x2="9" y2="5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                        <line x1="15" y1="2" x2="15" y2="5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                        <!-- Bottom lines -->
+                                        <line x1="9" y1="19" x2="9" y2="22" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                        <line x1="15" y1="19" x2="15" y2="22" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                        <!-- Left lines -->
+                                        <line x1="2" y1="9" x2="5" y2="9" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                        <line x1="2" y1="15" x2="5" y2="15" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                        <!-- Right lines -->
+                                        <line x1="19" y1="9" x2="22" y2="9" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                        <line x1="19" y1="15" x2="22" y2="15" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                    </svg>
+                                </div>
+                                <h3>AI</h3>
+                            </div>
+                            <p>An AI writing assistant that helps you draft posts faster, turning ideas into ready-to-publish content in seconds.</p>
+                        </div>
+                        
+                        <div class="feature-card all-in-one-card">
+                            <div class="all-in-one-icons">
+                                <div class="icon-card">
+                                    <div class="icon-background">
+                                        <svg class="card-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M16.5 8.5L18.5 10.5L7 22H2V17L13.5 5.5L16.5 8.5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                                            <path d="M13.5 5.5L16.5 2.5C17.3284 1.67157 18.6716 1.67157 19.5 2.5L21.5 4.5C22.3284 5.32843 22.3284 6.67157 21.5 7.5L18.5 10.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="icon-card">
+                                    <div class="icon-background">
+                                        <svg class="card-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="3" y="4" width="18" height="6" rx="1" stroke="currentColor" stroke-width="2" fill="none"/>
+                                            <rect x="3" y="14" width="18" height="6" rx="1" stroke="currentColor" stroke-width="2" fill="none"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="icon-card">
+                                    <div class="icon-background">
+                                        <svg class="card-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M14 2H6C5.46957 2 4.96086 2.21071 4.58579 2.58579C4.21071 2.96086 4 3.46957 4 4V20C4 20.5304 4.21071 21.0391 4.58579 21.4142C4.96086 21.7893 5.46957 22 6 22H18C18.5304 22 19.0391 21.7893 19.4142 21.4142C19.7893 21.0391 20 20.5304 20 20V8L14 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M14 2V8H20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M16 13H8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M16 17H8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M10 9H8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="all-in-one-title-container">
+                                <div class="all-in-one-title-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M12 2L8 8L2 12L8 16L12 22L16 16L22 12L16 8L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                                <h3>All in one</h3>
+                            </div>
+                            <p>Everything you need for LinkedIn in a single place, plan, create, and manage posts without switching tools or losing track.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="feature-card organize-card">
+                    <div class="table-rows" id="tableRows">
+                        <div class="table-row" draggable="true">
+                            <div class="row-bullet">•</div>
+                            <div class="row-title">Hustle</div>
+                            <div class="row-date">7/15/25, 12:00 AM</div>
+                            <div class="row-status planning">In Planning</div>
+                            <div class="row-priority medium">Medium</div>
+                        </div>
+                        <div class="table-row" draggable="true">
+                            <div class="row-bullet">•</div>
+                            <div class="row-title">Content</div>
+                            <div class="row-date">7/10/25, 12:00 AM</div>
+                            <div class="row-status planning">In Planning</div>
+                            <div class="row-priority high">High</div>
+                        </div>
+                        <div class="table-row" draggable="true">
+                            <div class="row-bullet">•</div>
+                            <div class="row-title">Strategy</div>
+                            <div class="row-date">7/08/25, 12:00 AM</div>
+                            <div class="row-status review">In Progress</div>
+                            <div class="row-priority low">Low</div>
+                        </div>
+                        <div class="table-row" draggable="true">
+                            <div class="row-bullet">•</div>
+                            <div class="row-title">Growth</div>
+                            <div class="row-date">7/05/25, 12:00 AM</div>
+                            <div class="row-status complete">Done</div>
+                            <div class="row-priority medium">Medium</div>
+                        </div>
+                        <div class="table-row" draggable="true">
+                            <div class="row-bullet">•</div>
+                            <div class="row-title">Design</div>
+                            <div class="row-date">7/03/25, 12:00 AM</div>
+                            <div class="row-status planning">In Planning</div>
+                            <div class="row-priority high">High</div>
+                        </div>
+                        <div class="table-row" draggable="true">
+                            <div class="row-bullet">•</div>
+                            <div class="row-title">Research</div>
+                            <div class="row-date">7/01/25, 12:00 AM</div>
+                            <div class="row-status review">In Progress</div>
+                            <div class="row-priority medium">Medium</div>
+                        </div>
+                        <div class="table-row" draggable="true">
+                            <div class="row-bullet">•</div>
+                            <div class="row-title">Testing</div>
+                            <div class="row-date">6/28/25, 12:00 AM</div>
+                            <div class="row-status complete">Done</div>
+                            <div class="row-priority low">Low</div>
+                        </div>
+                        <div class="table-row" draggable="true">
+                            <div class="row-bullet">•</div>
+                            <div class="row-title">Launch</div>
+                            <div class="row-date">6/25/25, 12:00 AM</div>
+                            <div class="row-status planning">In Planning</div>
+                            <div class="row-priority high">High</div>
+                        </div>
+                    </div>
+                    <div class="organize-title-container">
+                        <div class="organize-title-icon">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2 8L12 3L22 8L12 13L2 8Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M2 16L12 21L22 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h3>Organize</h3>
+                    </div>
+                    <p>Turn chaos into clarity. Sort ideas, track progress, and keep every post and campaign exactly where it belongs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="video-section">
+        <div class="video-container">
+            <div class="video-header">
+                <h2 class="video-title">Improve your branding without<br>lifting a finger!</h2>
+                
+                <div class="video-tabs">
+                    <label class="video-tab-label">
+                        <input type="radio" name="video-type" value="generation" class="video-radio" checked>
+                        <span class="video-tab active">Content Generation</span>
+                    </label>
+                    <label class="video-tab-label">
+                        <input type="radio" name="video-type" value="planner" class="video-radio">
+                        <span class="video-tab">Content Planner</span>
+                    </label>
+                </div>
+                
+                <div class="video-features">
+                    <div class="feature-item">AI Copywriting</div>
+                    <div class="feature-item">Content Planner</div>
+                    <div class="feature-item">Audience Engagement</div>
+                    <div class="feature-item">User Friendly Interface</div>
+                </div>
+            </div>
+            
+            <div class="video-preview">
+                <div class="video-wrapper">
+                    <div class="video-inner-container">
+                        <div class="video-border-wrapper active-video" id="generation-wrapper">
+                            <video id="generation-video" class="video-player" autoplay muted loop>
+                                <source src="Post.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <div class="video-border-wrapper" id="planner-wrapper" style="display: none;">
+                            <video id="planner-video" class="video-player" autoplay muted loop>
+                                <source src="Planner.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pricing-section" id="pricing">
+        <div class="pricing-ring1"></div>
+        <div class="pricing-ring2"></div>
+        <div class="pricing-ring3"></div>
+        <div class="pricing-ring4"></div>
+        <div class="pricing-ring5"></div>
+        <div class="pricing-ring6"></div>
+        <div class="pricing-ring7"></div>
+        <div class="pricing-ring8"></div>
+        <div class="pricing-container">
+            <div class="pricing-header">
+                <h2 class="pricing-title">Pricing</h2>
+                <p class="pricing-subtitle">Affordable solutions, premium results. Find your perfect plan.</p>
+            </div>
+            
+            <div class="pricing-plans">
+                <div class="pricing-card">
+                    <h3 class="plan-name">Free Forever</h3>
+                    <div class="plan-price">$0</div>
+                    
+                    <ul class="plan-features">
+                        <li>10 AI Posts Generation</li>
+                        <li>Content Preview</li>
+                        <li>Content Calendar</li>
+                        <li>Tables</li>
+                        <li>Limited Upload File Size Up To 5mb</li>
+                        <li>Community & Email Support</li>
+                    </ul>
+                    
+                    <button class="plan-button primary" data-href="https://sawify.co/auth">Get Started For FREE</button>
+                </div>
+                
+                <div class="pricing-card featured">
+                    <div class="popular-badge">Most Popular</div>
+                    <h3 class="plan-name">Pro Year</h3>
+                    <div class="plan-price">
+                        <span class="current-price">$49</span>
+                        <span class="original-price">$199</span>
+                    </div>
+                    <p class="plan-description">Everything in Free +</p>
+                    
+                    <ul class="plan-features">
+                        <li>100 AI Posts Generation</li>
+                        <li>Early Beta Versions</li>
+                        <li>Unlimited Upload Files</li>
+                        <li>Advanced Support</li>
+                    </ul>
+                    
+                    <button class="plan-button secondary" data-href="redirect.html">Contact Sales & Get FREE Live Demo</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials-section">
+        <div class="testimonials-container">
+            <div class="testimonials-header">
+                <h2 class="testimonials-title">Here's what others says about Sawify</h2>
+            </div>
+            
+            <div class="testimonials-grid">
+                <!-- Row 1 - Moves Left -->
+                <div class="testimonials-row">
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <div class="testimonial-content">
+                            <div class="testimonial-avatar">
+                                <div class="avatar-placeholder"></div>
+                                <div class="testimonial-user-info">
+                                    <span class="testimonial-name">Joe Dan</span>
+                                    <span class="testimonial-title">Founder, XYZ</span>
+                                </div>
+                            </div>
+                            <p class="testimonial-text">"Finally, an AI tool that feels like a 24/7 marketing team. Sawify turned my ideas into campaigns that actually convert."</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <div class="testimonial-content">
+                            <div class="testimonial-avatar">
+                                <div class="avatar-placeholder"></div>
+                                <div class="testimonial-user-info">
+                                    <span class="testimonial-name">Joe Dan</span>
+                                    <span class="testimonial-title">Founder, XYZ</span>
+                                </div>
+                            </div>
+                            <p class="testimonial-text">"Finally, an AI tool that feels like a 24/7 marketing team. Sawify turned my ideas into campaigns that actually convert."</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <div class="testimonial-content">
+                            <div class="testimonial-avatar">
+                                <div class="avatar-placeholder"></div>
+                                <div class="testimonial-user-info">
+                                    <span class="testimonial-name">Joe Dan</span>
+                                    <span class="testimonial-title">Founder, XYZ</span>
+                                </div>
+                            </div>
+                            <p class="testimonial-text">"Finally, an AI tool that feels like a 24/7 marketing team. Sawify turned my ideas into campaigns that actually convert."</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <div class="testimonial-content">
+                            <div class="testimonial-avatar">
+                                <div class="avatar-placeholder"></div>
+                                <div class="testimonial-user-info">
+                                    <span class="testimonial-name">Joe Dan</span>
+                                    <span class="testimonial-title">Founder, XYZ</span>
+                                </div>
+                            </div>
+                            <p class="testimonial-text">"Finally, an AI tool that feels like a 24/7 marketing team. Sawify turned my ideas into campaigns that actually convert."</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <div class="testimonial-content">
+                            <div class="testimonial-avatar">
+                                <div class="avatar-placeholder"></div>
+                                <div class="testimonial-user-info">
+                                    <span class="testimonial-name">Joe Dan</span>
+                                    <span class="testimonial-title">Founder, XYZ</span>
+                                </div>
+                            </div>
+                            <p class="testimonial-text">"Finally, an AI tool that feels like a 24/7 marketing team. Sawify turned my ideas into campaigns that actually convert."</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <div class="testimonial-content">
+                            <div class="testimonial-avatar">
+                                <div class="avatar-placeholder"></div>
+                                <div class="testimonial-user-info">
+                                    <span class="testimonial-name">Joe Dan</span>
+                                    <span class="testimonial-title">Founder, XYZ</span>
+                                </div>
+                            </div>
+                            <p class="testimonial-text">"Finally, an AI tool that feels like a 24/7 marketing team. Sawify turned my ideas into campaigns that actually convert."</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <div class="testimonial-content">
+                            <div class="testimonial-avatar">
+                                <div class="avatar-placeholder"></div>
+                                <div class="testimonial-user-info">
+                                    <span class="testimonial-name">Joe Dan</span>
+                                    <span class="testimonial-title">Founder, XYZ</span>
+                                </div>
+                            </div>
+                            <p class="testimonial-text">"Finally, an AI tool that feels like a 24/7 marketing team. Sawify turned my ideas into campaigns that actually convert."</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <div class="testimonial-content">
+                            <div class="testimonial-avatar">
+                                <div class="avatar-placeholder"></div>
+                                <div class="testimonial-user-info">
+                                    <span class="testimonial-name">Joe Dan</span>
+                                    <span class="testimonial-title">Founder, XYZ</span>
+                                </div>
+                            </div>
+                            <p class="testimonial-text">"Finally, an AI tool that feels like a 24/7 marketing team. Sawify turned my ideas into campaigns that actually convert."</p>
+                        </div>
+                    </div>
+                    <!-- Duplicate cards for seamless loop -->
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <div class="testimonial-content">
+                            <div class="testimonial-avatar">
+                                <div class="avatar-placeholder"></div>
+                                <div class="testimonial-user-info">
+                                    <span class="testimonial-name">Joe Dan</span>
+                                    <span class="testimonial-title">Founder, XYZ</span>
+                                </div>
+                            </div>
+                            <p class="testimonial-text">"Finally, an AI tool that feels like a 24/7 marketing team. Sawify turned my ideas into campaigns that actually convert."</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <div class="testimonial-content">
+                            <div class="testimonial-avatar">
+                                <div class="avatar-placeholder"></div>
+                                <div class="testimonial-user-info">
+                                    <span class="testimonial-name">Joe Dan</span>
+                                    <span class="testimonial-title">Founder, XYZ</span>
+                                </div>
+                            </div>
+                            <p class="testimonial-text">"Finally, an AI tool that feels like a 24/7 marketing team. Sawify turned my ideas into campaigns that actually convert."</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <div class="testimonial-content">
+                            <div class="testimonial-avatar">
+                                <div class="avatar-placeholder"></div>
+                                <div class="testimonial-user-info">
+                                    <span class="testimonial-name">Joe Dan</span>
+                                    <span class="testimonial-title">Founder, XYZ</span>
+                                </div>
+                            </div>
+                            <p class="testimonial-text">"Finally, an AI tool that feels like a 24/7 marketing team. Sawify turned my ideas into campaigns that actually convert."</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <div class="testimonial-content">
+                            <div class="testimonial-avatar">
+                                <div class="avatar-placeholder"></div>
+                                <div class="testimonial-user-info">
+                                    <span class="testimonial-name">Joe Dan</span>
+                                    <span class="testimonial-title">Founder, XYZ</span>
+                                </div>
+                            </div>
+                            <p class="testimonial-text">"Finally, an AI tool that feels like a 24/7 marketing team. Sawify turned my ideas into campaigns that actually convert."</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Row 2 - Moves Right -->
+                <div class="testimonials-row">
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <div class="testimonial-content">
+                            <div class="testimonial-avatar">
+                                <div class="avatar-placeholder"></div>
+                                <div class="testimonial-user-info">
+                                    <span class="testimonial-name">Joe Dan</span>
+                                    <span class="testimonial-title">Founder, XYZ</span>
+                                </div>
+                            </div>
+                            <p class="testimonial-text">"Finally, an AI tool that feels like a 24/7 marketing team. Sawify turned my ideas into campaigns that actually convert."</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <div class="testimonial-content">
+                            <div class="testimonial-avatar">
+                                <div class="avatar-placeholder"></div>
+                                <div class="testimonial-user-info">
+                                    <span class="testimonial-name">Joe Dan</span>
+                                    <span class="testimonial-title">Founder, XYZ</span>
+                                </div>
+                            </div>
+                            <p class="testimonial-text">"Finally, an AI tool that feels like a 24/7 marketing team. Sawify turned my ideas into campaigns that actually convert."</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <div class="testimonial-content">
+                            <div class="testimonial-avatar">
+                                <div class="avatar-placeholder"></div>
+                                <div class="testimonial-user-info">
+                                    <span class="testimonial-name">Joe Dan</span>
+                                    <span class="testimonial-title">Founder, XYZ</span>
+                                </div>
+                            </div>
+                            <p class="testimonial-text">"Finally, an AI tool that feels like a 24/7 marketing team. Sawify turned my ideas into campaigns that actually convert."</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <div class="testimonial-content">
+                            <div class="testimonial-avatar">
+                                <div class="avatar-placeholder"></div>
+                                <div class="testimonial-user-info">
+                                    <span class="testimonial-name">Joe Dan</span>
+                                    <span class="testimonial-title">Founder, XYZ</span>
+                                </div>
+                            </div>
+                            <p class="testimonial-text">"Finally, an AI tool that feels like a 24/7 marketing team. Sawify turned my ideas into campaigns that actually convert."</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <div class="testimonial-content">
+                            <div class="testimonial-avatar">
+                                <div class="avatar-placeholder"></div>
+                                <div class="testimonial-user-info">
+                                    <span class="testimonial-name">Joe Dan</span>
+                                    <span class="testimonial-title">Founder, XYZ</span>
+                                </div>
+                            </div>
+                            <p class="testimonial-text">"Finally, an AI tool that feels like a 24/7 marketing team. Sawify turned my ideas into campaigns that actually convert."</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <div class="testimonial-content">
+                            <div class="testimonial-avatar">
+                                <div class="avatar-placeholder"></div>
+                                <div class="testimonial-user-info">
+                                    <span class="testimonial-name">Joe Dan</span>
+                                    <span class="testimonial-title">Founder, XYZ</span>
+                                </div>
+                            </div>
+                            <p class="testimonial-text">"Finally, an AI tool that feels like a 24/7 marketing team. Sawify turned my ideas into campaigns that actually convert."</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <div class="testimonial-content">
+                            <div class="testimonial-avatar">
+                                <div class="avatar-placeholder"></div>
+                                <div class="testimonial-user-info">
+                                    <span class="testimonial-name">Joe Dan</span>
+                                    <span class="testimonial-title">Founder, XYZ</span>
+                                </div>
+                            </div>
+                            <p class="testimonial-text">"Finally, an AI tool that feels like a 24/7 marketing team. Sawify turned my ideas into campaigns that actually convert."</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <div class="testimonial-content">
+                            <div class="testimonial-avatar">
+                                <div class="avatar-placeholder"></div>
+                                <div class="testimonial-user-info">
+                                    <span class="testimonial-name">Joe Dan</span>
+                                    <span class="testimonial-title">Founder, XYZ</span>
+                                </div>
+                            </div>
+                            <p class="testimonial-text">"Finally, an AI tool that feels like a 24/7 marketing team. Sawify turned my ideas into campaigns that actually convert."</p>
+                        </div>
+                    </div>
+                    <!-- Duplicate cards for seamless loop -->
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <div class="testimonial-content">
+                            <div class="testimonial-avatar">
+                                <div class="avatar-placeholder"></div>
+                                <div class="testimonial-user-info">
+                                    <span class="testimonial-name">Joe Dan</span>
+                                    <span class="testimonial-title">Founder, XYZ</span>
+                                </div>
+                            </div>
+                            <p class="testimonial-text">"Finally, an AI tool that feels like a 24/7 marketing team. Sawify turned my ideas into campaigns that actually convert."</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <div class="testimonial-content">
+                            <div class="testimonial-avatar">
+                                <div class="avatar-placeholder"></div>
+                                <div class="testimonial-user-info">
+                                    <span class="testimonial-name">Joe Dan</span>
+                                    <span class="testimonial-title">Founder, XYZ</span>
+                                </div>
+                            </div>
+                            <p class="testimonial-text">"Finally, an AI tool that feels like a 24/7 marketing team. Sawify turned my ideas into campaigns that actually convert."</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <div class="testimonial-content">
+                            <div class="testimonial-avatar">
+                                <div class="avatar-placeholder"></div>
+                                <div class="testimonial-user-info">
+                                    <span class="testimonial-name">Joe Dan</span>
+                                    <span class="testimonial-title">Founder, XYZ</span>
+                                </div>
+                            </div>
+                            <p class="testimonial-text">"Finally, an AI tool that feels like a 24/7 marketing team. Sawify turned my ideas into campaigns that actually convert."</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <div class="testimonial-content">
+                            <div class="testimonial-avatar">
+                                <div class="avatar-placeholder"></div>
+                                <div class="testimonial-user-info">
+                                    <span class="testimonial-name">Joe Dan</span>
+                                    <span class="testimonial-title">Founder, XYZ</span>
+                                </div>
+                            </div>
+                            <p class="testimonial-text">"Finally, an AI tool that feels like a 24/7 marketing team. Sawify turned my ideas into campaigns that actually convert."</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Row 3 - Moves Left -->
+                <div class="testimonials-row">
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <div class="testimonial-content">
+                            <div class="testimonial-avatar">
+                                <div class="avatar-placeholder"></div>
+                                <div class="testimonial-user-info">
+                                    <span class="testimonial-name">Joe Dan</span>
+                                    <span class="testimonial-title">Founder, XYZ</span>
+                                </div>
+                            </div>
+                            <p class="testimonial-text">"Finally, an AI tool that feels like a 24/7 marketing team. Sawify turned my ideas into campaigns that actually convert."</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <div class="testimonial-content">
+                            <div class="testimonial-avatar">
+                                <div class="avatar-placeholder"></div>
+                                <div class="testimonial-user-info">
+                                    <span class="testimonial-name">Joe Dan</span>
+                                    <span class="testimonial-title">Founder, XYZ</span>
+                                </div>
+                            </div>
+                            <p class="testimonial-text">"Finally, an AI tool that feels like a 24/7 marketing team. Sawify turned my ideas into campaigns that actually convert."</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <div class="testimonial-content">
+                            <div class="testimonial-avatar">
+                                <div class="avatar-placeholder"></div>
+                                <div class="testimonial-user-info">
+                                    <span class="testimonial-name">Joe Dan</span>
+                                    <span class="testimonial-title">Founder, XYZ</span>
+                                </div>
+                            </div>
+                            <p class="testimonial-text">"Finally, an AI tool that feels like a 24/7 marketing team. Sawify turned my ideas into campaigns that actually convert."</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <div class="testimonial-content">
+                            <div class="testimonial-avatar">
+                                <div class="avatar-placeholder"></div>
+                                <div class="testimonial-user-info">
+                                    <span class="testimonial-name">Joe Dan</span>
+                                    <span class="testimonial-title">Founder, XYZ</span>
+                                </div>
+                            </div>
+                            <p class="testimonial-text">"Finally, an AI tool that feels like a 24/7 marketing team. Sawify turned my ideas into campaigns that actually convert."</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <div class="testimonial-content">
+                            <div class="testimonial-avatar">
+                                <div class="avatar-placeholder"></div>
+                                <div class="testimonial-user-info">
+                                    <span class="testimonial-name">Joe Dan</span>
+                                    <span class="testimonial-title">Founder, XYZ</span>
+                                </div>
+                            </div>
+                            <p class="testimonial-text">"Finally, an AI tool that feels like a 24/7 marketing team. Sawify turned my ideas into campaigns that actually convert."</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <div class="testimonial-content">
+                            <div class="testimonial-avatar">
+                                <div class="avatar-placeholder"></div>
+                                <div class="testimonial-user-info">
+                                    <span class="testimonial-name">Joe Dan</span>
+                                    <span class="testimonial-title">Founder, XYZ</span>
+                                </div>
+                            </div>
+                            <p class="testimonial-text">"Finally, an AI tool that feels like a 24/7 marketing team. Sawify turned my ideas into campaigns that actually convert."</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <div class="testimonial-content">
+                            <div class="testimonial-avatar">
+                                <div class="avatar-placeholder"></div>
+                                <div class="testimonial-user-info">
+                                    <span class="testimonial-name">Joe Dan</span>
+                                    <span class="testimonial-title">Founder, XYZ</span>
+                                </div>
+                            </div>
+                            <p class="testimonial-text">"Finally, an AI tool that feels like a 24/7 marketing team. Sawify turned my ideas into campaigns that actually convert."</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <div class="testimonial-content">
+                            <div class="testimonial-avatar">
+                                <div class="avatar-placeholder"></div>
+                                <div class="testimonial-user-info">
+                                    <span class="testimonial-name">Joe Dan</span>
+                                    <span class="testimonial-title">Founder, XYZ</span>
+                                </div>
+                            </div>
+                            <p class="testimonial-text">"Finally, an AI tool that feels like a 24/7 marketing team. Sawify turned my ideas into campaigns that actually convert."</p>
+                        </div>
+                    </div>
+                    <!-- Duplicate cards for seamless loop -->
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <div class="testimonial-content">
+                            <div class="testimonial-avatar">
+                                <div class="avatar-placeholder"></div>
+                                <div class="testimonial-user-info">
+                                    <span class="testimonial-name">Joe Dan</span>
+                                    <span class="testimonial-title">Founder, XYZ</span>
+                                </div>
+                            </div>
+                            <p class="testimonial-text">"Finally, an AI tool that feels like a 24/7 marketing team. Sawify turned my ideas into campaigns that actually convert."</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <div class="testimonial-content">
+                            <div class="testimonial-avatar">
+                                <div class="avatar-placeholder"></div>
+                                <div class="testimonial-user-info">
+                                    <span class="testimonial-name">Joe Dan</span>
+                                    <span class="testimonial-title">Founder, XYZ</span>
+                                </div>
+                            </div>
+                            <p class="testimonial-text">"Finally, an AI tool that feels like a 24/7 marketing team. Sawify turned my ideas into campaigns that actually convert."</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <div class="testimonial-content">
+                            <div class="testimonial-avatar">
+                                <div class="avatar-placeholder"></div>
+                                <div class="testimonial-user-info">
+                                    <span class="testimonial-name">Joe Dan</span>
+                                    <span class="testimonial-title">Founder, XYZ</span>
+                                </div>
+                            </div>
+                            <p class="testimonial-text">"Finally, an AI tool that feels like a 24/7 marketing team. Sawify turned my ideas into campaigns that actually convert."</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <div class="testimonial-content">
+                            <div class="testimonial-avatar">
+                                <div class="avatar-placeholder"></div>
+                                <div class="testimonial-user-info">
+                                    <span class="testimonial-name">Joe Dan</span>
+                                    <span class="testimonial-title">Founder, XYZ</span>
+                                </div>
+                            </div>
+                            <p class="testimonial-text">"Finally, an AI tool that feels like a 24/7 marketing team. Sawify turned my ideas into campaigns that actually convert."</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="footer-cta-section">
+        <div class="footer-cta-container">
+            <div class="footer-cta-content">
+                <h2 class="footer-cta-title">Want To Become 0.1% Brand?</h2>
+                <button class="footer-cta-button" data-href="https://sawify.co/auth">Get Started For FREE</button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-section" id="footer">
+        <div class="footer-container">
+            <div class="footer-card">
+                <div class="footer-content">
+                    <div class="footer-brand">
+                        <div class="footer-logo">
+                            <a href="#top">
+                                <img src="LogoSawify1.png" alt="Sawify Logo">
+                            </a>
+                        </div>
+                        <div class="footer-social">
+                            <a href="https://www.instagram.com/sawifyio/" target="_blank" rel="noopener noreferrer" class="social-link">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                                </svg>
+                            </a>
+                            <a href="https://www.linkedin.com/company/sawify" target="_blank" rel="noopener noreferrer" class="social-link">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                                </svg>
+                            </a>
+                            <a href="https://www.tiktok.com/@sawifyio" target="_blank" rel="noopener noreferrer" class="social-link">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/>
+                                </svg>
+                            </a>
+                            <a href="https://discord.gg/Sy54BkG8" target="_blank" rel="noopener noreferrer" class="social-link">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419-.0002 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9554 2.4189-2.1568 2.4189Z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="footer-links">
+                        <div class="footer-column">
+                            <h3 class="footer-column-title">Products</h3>
+                            <ul class="footer-links-list">
+                                <li><a href="#products" class="footer-link">AI Writer</a></li>
+                                <li><a href="#products" class="footer-link">Content Planner</a></li>
+                                <li><a href="#products" class="footer-link">Tables</a></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="footer-column">
+                            <h3 class="footer-column-title">Resources</h3>
+                            <ul class="footer-links-list">
+                                <li><a href="https://discord.gg/Sy54BkG8" target="_blank" rel="noopener noreferrer" class="footer-link">Community</a></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="footer-column">
+                            <h3 class="footer-column-title">Company</h3>
+                            <ul class="footer-links-list">
+                                <li><a href="#" class="footer-link modal-link" data-modal="about">About Us</a></li>
+                                <li><a href="#" class="footer-link modal-link" data-modal="privacy">Privacy Policy</a></li>
+                                <li><a href="#" class="footer-link modal-link" data-modal="terms">Terms Of Service</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-bottom">
+                    <p class="footer-copyright">© 2025 Sawify</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        // Drag and drop functionality for table rows
+        const tableRows = document.getElementById('tableRows');
+        const rows = tableRows.querySelectorAll('.table-row');
+
+        let draggedRow = null;
+
+        rows.forEach(row => {
+            row.addEventListener('dragstart', (e) => {
+                draggedRow = row;
+                row.style.opacity = '0.5';
+                e.dataTransfer.effectAllowed = 'move';
+                e.dataTransfer.setData('text/html', row.outerHTML);
+            });
+
+            row.addEventListener('dragend', () => {
+                row.style.opacity = '1';
+                draggedRow = null;
+            });
+
+            row.addEventListener('dragover', (e) => {
+                e.preventDefault();
+                e.dataTransfer.dropEffect = 'move';
+            });
+
+            row.addEventListener('drop', (e) => {
+                e.preventDefault();
+                if (draggedRow && draggedRow !== row) {
+                    const allRows = Array.from(rows);
+                    const draggedIndex = allRows.indexOf(draggedRow);
+                    const targetIndex = allRows.indexOf(row);
+
+                    // Add smooth transition class
+                    draggedRow.classList.add('reordering');
+
+                    if (draggedIndex < targetIndex) {
+                        // Insert after target
+                        tableRows.insertBefore(draggedRow, row.nextSibling);
+                    } else {
+                        // Insert before target
+                        tableRows.insertBefore(draggedRow, row);
+                    }
+
+                    // Remove transition class after animation
+                    setTimeout(() => {
+                        draggedRow.classList.remove('reordering');
+                    }, 300);
+                }
+            });
+        });
+    </script>
+
+    <!-- Modal markup for footer links -->
+    <div id="globalModal" class="modal" aria-hidden="true" style="display:none;">
+        <div class="modal-backdrop"></div>
+        <div class="modal-panel">
+            <button class="modal-close" aria-label="Close modal">×</button>
+            <h2 class="modal-title"></h2>
+            <div class="modal-body"></div>
+        </div>
+    </div>
+
+    <!-- Modal styles have been moved to `styles.css` to keep styling centralized -->
+
+    <script>
+    // Modal behavior for footer links
+    (function(){
+        const modal = document.getElementById('globalModal');
+        const modalTitle = modal.querySelector('.modal-title');
+        const modalBody = modal.querySelector('.modal-body');
+        const closeBtn = modal.querySelector('.modal-close');
+
+        const content = {
+            about: {
+                title: 'About Sawify',
+                body: '<p>Sawify is a lightweight platform to help you plan, create, and schedule content with AI-assisted writing and collaboration tools.</p>'
+            },
+            privacy: {
+                title: 'Privacy Policy',
+                body: `
+<p>Sawify ("we", "our", or "us") respects your privacy and is committed to protecting the personal information you provide when using our website https://sawify.co and associated services. This Privacy Policy outlines how we collect, use, store, and share your information. By using our website, you agree to the terms described here. Please also review our Terms of Service for additional information.</p>
+
+<h3>1. Personal and Non-Personal Information We Collect</h3>
+
+<h4>Personal Information</h4>
+<p>We collect the following personal data when you create an account or use our services:</p>
+<ul>
+  <li>Name</li>
+  <li>Email address</li>
+  <li>Payment details (processed via PayPal Invoice)</li>
+</ul>
+<p>You may also contact us via email or customer support, in which case we may store communication data.</p>
+
+<h4>Non-Personal Information</h4>
+<p>We use tools like Google Analytics and CookieYes to collect non-identifying data such as:</p>
+<ul>
+  <li>Browser type and version</li>
+  <li>Device information</li>
+  <li>Pages visited and interaction behavior</li>
+</ul>
+
+<h3>2. Cookies and Tracking Technologies</h3>
+
+<p>We use cookies and similar technologies to enhance user experience and track website performance. Tools include:</p>
+<ul>
+  <li>Google Analytics: to understand visitor behavior</li>
+  <li>CookieYes: to manage cookie consent</li>
+</ul>
+
+<p>You may choose to disable cookies in your browser settings. However, this may impact functionality on our website.</p>
+
+<h3>3. How We Use Your Information</h3>
+
+<p>We may use your information to:</p>
+<ul>
+  <li>Provide and manage your Sawify account</li>
+  <li>Process transactions via PayPal Invoice</li>
+  <li>Respond to support inquiries</li>
+  <li>Improve our services and user experience</li>
+  <li>Send service-related updates or essential emails</li>
+</ul>
+
+<h3>4. Data Storage and Security</h3>
+
+<p>Your data is stored securely using Supabase and protected with SSL encryption. While we follow industry best practices, no method of data transmission or storage is 100% secure.</p>
+
+<h3>5. Sharing of Personal Information</h3>
+
+<p>We do not sell or rent your personal data. We may share it only in the following cases:</p>
+<ul>
+  <li>With PayPal, to process payments</li>
+  <li>With Supabase, for backend operations</li>
+  <li>If legally required (e.g., by court order or applicable regulation)</li>
+</ul>
+
+<h3>6. Your Rights and Choices</h3>
+
+<p>You have the right to:</p>
+<ul>
+  <li>View, correct, or update your personal information by contacting us at info@sawify.co</li>
+  <li>Delete your account at any time through your dashboard</li>
+  <li>Withdraw consent where applicable</li>
+</ul>
+
+<h3>7. Children's Privacy</h3>
+
+<p>Our services are not specifically directed at children under the age of 13, and we do not knowingly collect personal data from minors.</p>
+
+<h3>8. Third-Party Links and Services</h3>
+
+<p>Our website may include links to third-party sites. We are not responsible for their privacy practices and encourage you to read their policies.</p>
+
+<h3>9. Public Areas and User Content</h3>
+
+<p>If we include public discussion features in the future, any information you choose to share may be visible to others. We are not responsible for third-party use of such public content.</p>
+
+<h3>10. Legal Compliance</h3>
+
+<p>This Privacy Policy is governed by and construed in accordance with the laws of the Republic of Serbia and the Law on Personal Data Protection.</p>
+
+<h3>11. Changes to This Privacy Policy</h3>
+
+<p>We may update this Privacy Policy periodically. Significant changes will be announced on our homepage. Continued use of the site after changes indicates acceptance.</p>
+
+<h3>12. Contact Us</h3>
+
+<p>If you have any questions or concerns about this Privacy Policy, please contact us at info@sawify.co</p>
+                `
+            },
+            terms: {
+                title: 'Terms Of Service',
+                body: `
+<h3>1. General</h3>
+
+<p>This website (the "Site") is owned and operated by Sawify ("Sawify," "we," or "us"). By accessing or using the Site and its associated services, you agree to be bound by these Terms and Conditions ("Terms"), our Privacy Policy, and any other applicable agreements or policies presented to you in relation to our services.</p>
+
+<p>We reserve the right to update or modify these Terms at any time. Updates will be posted on this page with an updated revision date. Your continued use of the Site or our services constitutes your acceptance of the modified Terms.</p>
+
+<h3>2. Intellectual Property</h3>
+
+<h4>Our License to You</h4>
+<p>All content, software, and materials available on the Site are the property of Sawify or its licensors and are protected by intellectual property laws. We grant you a limited, non-exclusive, non-transferable license to access and use the Site and services for personal or internal business use, subject to these Terms.</p>
+
+<p>You may not copy, reproduce, republish, upload, transmit, distribute, modify, or create derivative works from any part of this Site or its content without express written consent from us.</p>
+
+<h4>Your License to Us</h4>
+<p>By submitting content to Sawify (via feedback, comments, media, or otherwise), you grant us a royalty-free, worldwide, perpetual, and irrevocable license to use, modify, and display such content in connection with operating and promoting the Site and services. You must have the legal right to submit such content.</p>
+
+<h3>3. User Conduct</h3>
+
+<p>You agree not to:</p>
+<ul>
+  <li>Violate any applicable laws or regulations</li>
+  <li>Infringe on the intellectual property or privacy rights of others</li>
+  <li>Use our services for illegal or unauthorized purposes</li>
+  <li>Attempt to gain unauthorized access to any part of our Site or systems</li>
+  <li>Upload or transmit viruses or malicious code</li>
+</ul>
+
+<p>We reserve the right to suspend or terminate your access if we reasonably believe you have violated these Terms.</p>
+
+<h3>4. Payment and Commerce</h3>
+
+<p>Sawify provides access to subscription-based software services. Payments are processed securely via PayPal Invoice. We do not store full payment details. By purchasing a subscription, you agree to our billing policies and authorize recurring charges unless you cancel.</p>
+
+<p>You must provide accurate billing and contact information. If your payment fails or is canceled, access to premium services will be paused until the issue is resolved.</p>
+
+<p>All purchases are for individual use only. Sharing login credentials or account access is prohibited and may lead to suspension without refund.</p>
+
+<h3>5. Account Management</h3>
+
+<p>You may register for an account using your name, email, and other required information. You are responsible for maintaining the confidentiality of your account and password. Notify us immediately of unauthorized access.</p>
+
+<p>You can request to update or delete your account by contacting us at info@sawify.co.</p>
+
+<h3>6. Limitation of Liability</h3>
+
+<p>To the maximum extent permitted by law, Sawify and its affiliates will not be liable for any indirect, incidental, special, or consequential damages arising from your use of the Site, services, or third-party services accessed through the Site.</p>
+
+<p>Sawify is not liable for service interruptions, data loss, or unauthorized access beyond our reasonable control. Your sole remedy for dissatisfaction is to discontinue using the Site and services.</p>
+
+<h3>7. Third-Party Services</h3>
+
+<p>The Site may link to third-party websites or services (e.g., analytics, payment processors). We do not control or endorse third-party content and disclaim any liability related to your use of such services.</p>
+
+<h3>8. Termination</h3>
+
+<p>We reserve the right to terminate or suspend your access to the Site or services at any time, without notice, for conduct that we believe violates these Terms or is harmful to other users, Sawify, or third parties.</p>
+
+<h3>9. Governing Law</h3>
+
+<p>These Terms are governed by and interpreted in accordance with the laws of the Republic of Serbia, including the Law on Obligations and other applicable regulations. Any disputes shall be resolved under the jurisdiction of the competent court in the Republic of Serbia.</p>
+                `
+            }
+        };
+
+        function openModal(type){
+            const data = content[type] || { title: '', body: '' };
+            modalTitle.innerHTML = data.title;
+            // remove any previous "last edited" note
+            const prevNote = modal.querySelector('.modal-last-edited');
+            if (prevNote) prevNote.remove();
+            // insert "Last edited" only for policy-related modals
+            if (type === 'privacy' || type === 'terms') {
+                modalTitle.insertAdjacentHTML('afterend', '<div class="modal-last-edited">Last Edited 11/1/2025.</div>');
+            }
+            modalBody.innerHTML = data.body;
+            modal.style.display = 'flex';
+            modal.setAttribute('aria-hidden', 'false');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal(){
+            modal.style.display = 'none';
+            modal.setAttribute('aria-hidden', 'true');
+            document.body.style.overflow = '';
+        }
+
+        document.querySelectorAll('.modal-link').forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const type = link.getAttribute('data-modal');
+                openModal(type);
+            });
+        });
+
+        closeBtn.addEventListener('click', closeModal);
+        modal.addEventListener('click', (e) => { if (e.target === modal.querySelector('.modal-backdrop')) closeModal(); });
+        document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeModal(); });
+    })();
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

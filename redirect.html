@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting to Calendly...</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #131414 0%, #1a1a1a 100%);
+            font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+        }
+        .container {
+            text-align: center;
+            color: white;
+        }
+        .spinner {
+            border: 4px solid rgba(255, 255, 255, 0.1);
+            border-top: 4px solid #38B6FF;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 20px;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        h1 {
+            font-size: 24px;
+            margin: 0 0 10px 0;
+            font-weight: 600;
+        }
+        p {
+            font-size: 16px;
+            color: rgba(255, 255, 255, 0.7);
+            margin: 0;
+        }
+        .fallback-link {
+            margin-top: 30px;
+        }
+        .fallback-link a {
+            color: #38B6FF;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        .fallback-link a:hover {
+            color: #60C4FF;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="spinner"></div>
+    </div>
+
+    <script>
+        // Security: Verify the referrer is from your domain
+        const allowedDomains = ['sawify.co', 'www.sawify.co'];
+        const referrer = document.referrer;
+        const isValidReferrer = allowedDomains.some(domain => referrer.includes(domain)) || referrer === '';
+
+        // Only redirect if coming from your domain or direct access
+        if (isValidReferrer) {
+            // Redirect to Calendly after a short delay for UX
+            setTimeout(() => {
+                window.location.href = 'https://calendly.com/sawify/live-demo';
+            }, 500);
+        } else {
+            // If referrer is suspicious, show warning
+            document.querySelector('h1').textContent = 'Security Check';
+            document.querySelector('p').textContent = 'This redirect is only available from Sawify.co';
+            document.querySelector('.spinner').style.display = 'none';
+        }
+    </script>
+</body>
+</html>

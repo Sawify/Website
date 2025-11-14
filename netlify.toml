@@ -1,0 +1,51 @@
+# Netlify Configuration
+
+# Redirect HTTP to HTTPS
+[[redirects]]
+from = "http://*"
+to = "https://:splat"
+status = 301
+force = true
+
+# Security Headers
+[[headers]]
+for = "/*"
+[headers.values]
+    # Strict Transport Security - force HTTPS for 1 year
+    Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
+    
+    # Prevent clickjacking
+    X-Frame-Options = "SAMEORIGIN"
+    
+    # Prevent MIME type sniffing
+    X-Content-Type-Options = "nosniff"
+    
+    # Enable XSS protection
+    X-XSS-Protection = "1; mode=block"
+    
+    # Referrer Policy
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    
+    # Content Security Policy
+    Content-Security-Policy = "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; frame-ancestors 'self';"
+
+# Cache headers for static assets
+[[headers]]
+for = "/img/*"
+[headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+for = "/*.css"
+[headers.values]
+    Cache-Control = "public, max-age=2592000"
+
+[[headers]]
+for = "/*.js"
+[headers.values]
+    Cache-Control = "public, max-age=2592000"
+
+[[headers]]
+for = "/*.html"
+[headers.values]
+    Cache-Control = "public, max-age=604800"
