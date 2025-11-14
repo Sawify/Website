@@ -13,6 +13,24 @@ from = "/"
 to = "/landing.html"
 status = 200
 
+# Redirect privacy policy to landing page
+[[redirects]]
+from = "/privacy-policy.html"
+to = "/landing.html"
+status = 200
+
+# Redirect terms to landing page
+[[redirects]]
+from = "/terms.html"
+to = "/landing.html"
+status = 200
+
+# Catch-all redirect for any undefined routes
+[[redirects]]
+from = "/*"
+to = "/landing.html"
+status = 200
+
 # Security Headers
 [[headers]]
 for = "/*"
