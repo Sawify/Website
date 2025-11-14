@@ -148,9 +148,10 @@ document.addEventListener('DOMContentLoaded', function() {
     featureItems.forEach(item => {
         const header = item.querySelector('.feature-header');
         const toggle = item.querySelector('.feature-toggle');
-        const featureTitle = item.querySelector('h3').textContent;
+        const featureTitle = item.querySelector('h3') ? item.querySelector('h3').textContent : '';
         
-        header.addEventListener('click', function() {
+        if (header) {
+            header.addEventListener('click', function() {
             // If clicking on an already active item, don't close it (keep at least one open)
             if (item.classList.contains('active')) {
                 return; // Do nothing if trying to close the active item
@@ -173,7 +174,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     otherToggle.textContent = '+';
                 }
             });
-        });
+        }
     });
     
     // Initialize with AI Writing Assistant selected (since it's active by default)
