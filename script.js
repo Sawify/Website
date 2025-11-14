@@ -41,13 +41,15 @@ document.addEventListener('DOMContentLoaded', function() {
     // Smooth scrolling for logo link
     const logoLink = document.querySelector('.logo-link');
     
-    logoLink.addEventListener('click', function(e) {
-        e.preventDefault();
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
+    if (logoLink) {
+        logoLink.addEventListener('click', function(e) {
+            e.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
         });
-    });
+    }
     
     // Smooth scrolling for navigation links
     const navLinks = document.querySelectorAll('.nav-links a[href^="#"]');
