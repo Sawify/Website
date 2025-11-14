@@ -152,27 +152,28 @@ document.addEventListener('DOMContentLoaded', function() {
         
         if (header) {
             header.addEventListener('click', function() {
-            // If clicking on an already active item, don't close it (keep at least one open)
-            if (item.classList.contains('active')) {
-                return; // Do nothing if trying to close the active item
-            }
-            
-            // Close all other items and activate the clicked one
-            featureItems.forEach(otherItem => {
-                if (otherItem === item) {
-                    // Activate the clicked item
-                    otherItem.classList.add('active');
-                    const otherToggle = otherItem.querySelector('.feature-toggle');
-                    otherToggle.textContent = '−';
-                    
-                    // Update preview content
-                    updatePreviewContent(featureTitle);
-                } else {
-                    // Close all other items
-                    otherItem.classList.remove('active');
-                    const otherToggle = otherItem.querySelector('.feature-toggle');
-                    otherToggle.textContent = '+';
+                // If clicking on an already active item, don't close it (keep at least one open)
+                if (item.classList.contains('active')) {
+                    return; // Do nothing if trying to close the active item
                 }
+                
+                // Close all other items and activate the clicked one
+                featureItems.forEach(otherItem => {
+                    if (otherItem === item) {
+                        // Activate the clicked item
+                        otherItem.classList.add('active');
+                        const otherToggle = otherItem.querySelector('.feature-toggle');
+                        otherToggle.textContent = '−';
+                        
+                        // Update preview content
+                        updatePreviewContent(featureTitle);
+                    } else {
+                        // Close all other items
+                        otherItem.classList.remove('active');
+                        const otherToggle = otherItem.querySelector('.feature-toggle');
+                        otherToggle.textContent = '+';
+                    }
+                });
             });
         }
     });
