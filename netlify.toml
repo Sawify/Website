@@ -7,6 +7,12 @@ to = "https://:splat"
 status = 301
 force = true
 
+# Redirect root to landing page
+[[redirects]]
+from = "/"
+to = "/landing.html"
+status = 200
+
 # Security Headers
 [[headers]]
 for = "/*"
