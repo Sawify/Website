@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Redirecting to Calendly...</title>
+    <title>Sawify</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -63,26 +63,27 @@
 <body>
     <div class="container">
         <div class="spinner"></div>
+        <h1>Redirecting to Calendly...</h1>
+        <p>Please wait while we redirect you.</p>
+        <div class="fallback-link">
+            <a href="https://calendly.com/sawify-io/live-demo" id="fallbackLink">Click here if you are not redirected</a>
+        </div>
     </div>
 
     <script>
-        // Security: Verify the referrer is from your domain
-        const allowedDomains = ['sawify.co', 'www.sawify.co'];
-        const referrer = document.referrer;
-        const isValidReferrer = allowedDomains.some(domain => referrer.includes(domain)) || referrer === '';
-
-        // Only redirect if coming from your domain or direct access
-        if (isValidReferrer) {
-            // Redirect to Calendly after a short delay for UX
-            setTimeout(() => {
-                window.location.href = 'https://calendly.com/sawify-io/live-demo';
-            }, 500);
-        } else {
-            // If referrer is suspicious, show warning
-            document.querySelector('h1').textContent = 'Security Check';
-            document.querySelector('p').textContent = 'This redirect is only available from Sawify.co';
-            document.querySelector('.spinner').style.display = 'none';
-        }
+        // Immediate redirect without referrer check to prevent endless loading
+        // The redirect will happen regardless of where the user comes from
+        const calendlyUrl = 'https://calendly.com/sawify-io/live-demo';
+        
+        // Redirect immediately using replace to avoid back button issues
+        window.location.replace(calendlyUrl);
+        
+        // Fallback: If replace doesn't work, try href after a short delay
+        setTimeout(() => {
+            if (window.location.href !== calendlyUrl) {
+                window.location.href = calendlyUrl;
+            }
+        }, 1000);
     </script>
 </body>
 </html>
