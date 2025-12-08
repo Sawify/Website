@@ -74,12 +74,12 @@
         // Immediate redirect without referrer check to prevent endless loading
         // The redirect will happen regardless of where the user comes from
         const calendlyUrl = 'https://calendly.com/sawify-io/live-demo';
-        
+
         // Redirect immediately using replace to avoid back button issues
         window.location.replace(calendlyUrl);
         
         // Fallback: If replace doesn't work, try href after a short delay
-        setTimeout(() => {
+            setTimeout(() => {
             if (window.location.href !== calendlyUrl) {
                 window.location.href = calendlyUrl;
             }
