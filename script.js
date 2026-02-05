@@ -181,6 +181,59 @@ document.addEventListener('DOMContentLoaded', function() {
     // Initialize with AI Writing Assistant selected (since it's active by default)
     updatePreviewContent('AI Writing Assistant');
 
+    // Pricing toggle functionality with counting animation
+    const pricingToggle = document.getElementById('pricingToggle');
+    const featuredCard = document.querySelector('.pricing-card.featured');
+    
+    function animateValue(element, start, end, duration) {
+        const startTime = performance.now();
+        const prefix = '$';
+        
+        function update(currentTime) {
+            const elapsed = currentTime - startTime;
+            const progress = Math.min(elapsed / duration, 1);
+            
+            // Easing function for smooth animation
+            const easeOutQuart = 1 - Math.pow(1 - progress, 4);
+            const current = Math.round(start + (end - start) * easeOutQuart);
+            
+            element.textContent = prefix + current;
+            
+            if (progress < 1) {
+                requestAnimationFrame(update);
+            }
+        }
+        
+        requestAnimationFrame(update);
+    }
+    
+    if (pricingToggle && featuredCard) {
+        pricingToggle.addEventListener('change', function() {
+            const currentPriceEl = featuredCard.querySelector('.current-price');
+            const originalPriceEl = featuredCard.querySelector('.original-price');
+            
+            // Get current values (parse numbers from text)
+            const currentValue = parseInt(currentPriceEl.textContent.replace('$', ''));
+            const originalValue = parseInt(originalPriceEl.textContent.replace('$', ''));
+            
+            if (this.checked) {
+                // Annually (ON)
+                const newPrice = parseInt(featuredCard.dataset.annualPrice);
+                const newOriginal = parseInt(featuredCard.dataset.annualOriginal);
+                
+                animateValue(currentPriceEl, currentValue, newPrice, 500);
+                animateValue(originalPriceEl, originalValue, newOriginal, 500);
+            } else {
+                // Monthly (OFF)
+                const newPrice = parseInt(featuredCard.dataset.monthlyPrice);
+                const newOriginal = parseInt(featuredCard.dataset.monthlyOriginal);
+                
+                animateValue(currentPriceEl, currentValue, newPrice, 500);
+                animateValue(originalPriceEl, originalValue, newOriginal, 500);
+            }
+        });
+    }
+
     // Hamburger menu functionality
     const hamburgerMenu = document.getElementById('hamburgerMenu');
     const mobileMenu = document.getElementById('mobileMenu');
