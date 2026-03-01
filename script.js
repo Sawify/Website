@@ -38,16 +38,21 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // Smooth scrolling for logo link
+    // Smooth scrolling for logo link (only on same page)
     const logoLink = document.querySelector('.logo-link');
     
     if (logoLink) {
         logoLink.addEventListener('click', function(e) {
-            e.preventDefault();
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
+            const href = this.getAttribute('href');
+            // Only prevent default if it's a same-page anchor (starts with #)
+            if (href && href.startsWith('#')) {
+                e.preventDefault();
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            }
+            // Otherwise allow normal navigation to other pages
         });
     }
     
@@ -180,6 +185,59 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Initialize with AI Writing Assistant selected (since it's active by default)
     updatePreviewContent('AI Writing Assistant');
+
+    // Pricing toggle functionality with counting animation
+    const pricingToggle = document.getElementById('pricingToggle');
+    const featuredCard = document.querySelector('.pricing-card.featured');
+    
+    function animateValue(element, start, end, duration) {
+        const startTime = performance.now();
+        const prefix = '$';
+        
+        function update(currentTime) {
+            const elapsed = currentTime - startTime;
+            const progress = Math.min(elapsed / duration, 1);
+            
+            // Easing function for smooth animation
+            const easeOutQuart = 1 - Math.pow(1 - progress, 4);
+            const current = Math.round(start + (end - start) * easeOutQuart);
+            
+            element.textContent = prefix + current;
+            
+            if (progress < 1) {
+                requestAnimationFrame(update);
+            }
+        }
+        
+        requestAnimationFrame(update);
+    }
+    
+    if (pricingToggle && featuredCard) {
+        pricingToggle.addEventListener('change', function() {
+            const currentPriceEl = featuredCard.querySelector('.current-price');
+            const originalPriceEl = featuredCard.querySelector('.original-price');
+            
+            // Get current values (parse numbers from text)
+            const currentValue = parseInt(currentPriceEl.textContent.replace('$', ''));
+            const originalValue = parseInt(originalPriceEl.textContent.replace('$', ''));
+            
+            if (this.checked) {
+                // Annually (ON)
+                const newPrice = parseInt(featuredCard.dataset.annualPrice);
+                const newOriginal = parseInt(featuredCard.dataset.annualOriginal);
+                
+                animateValue(currentPriceEl, currentValue, newPrice, 500);
+                animateValue(originalPriceEl, originalValue, newOriginal, 500);
+            } else {
+                // Monthly (OFF)
+                const newPrice = parseInt(featuredCard.dataset.monthlyPrice);
+                const newOriginal = parseInt(featuredCard.dataset.monthlyOriginal);
+                
+                animateValue(currentPriceEl, currentValue, newPrice, 500);
+                animateValue(originalPriceEl, originalValue, newOriginal, 500);
+            }
+        });
+    }
 
     // Hamburger menu functionality
     const hamburgerMenu = document.getElementById('hamburgerMenu');
